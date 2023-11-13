@@ -67,7 +67,7 @@ const Info = () => {
                         </div>
                         <button type="submit">Claim your free trial </button>
                     </form>
-                    <p> By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+                    <p> By clicking the button, you are agreeing to our <a href="https://www.google.com/">Terms and Services</a></p>
                 </div>
             </div>
         </>
