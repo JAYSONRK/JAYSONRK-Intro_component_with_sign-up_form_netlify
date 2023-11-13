@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Montserrat:ital,wght@0,500;1,200&family=Open+Sans&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Playpen+Sans:wght@700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300&family=Rubik:ital@1&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+--Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+/* ### Accent */
+--Blue: hsl(248, 32%, 49%);
+/* ### Neutral */
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+body {
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./bg-intro-mobile.png'),var(--Red);
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 3.6fr 6.4fr;
+  padding: 2rem 1rem 0.1rem;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.description {
+  color: whitesmoke;
+}
+.description h1 {
+  padding: 2.5rem 1rem 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.description p {
+  letter-spacing: 0.05rem;
+}
+
+.plan {
+  padding: 1rem 4rem;
+  background-color: var(--Blue);
+  color: whitesmoke;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  box-shadow: 1.5px 1.5px 4px 3px rgba(2, 2, 44, 0.403);
+}
+.plan p {
+  line-height: 1.7rem;
+  font-weight:400;
+} 
+.plan span {
+  font-weight: 700;
+}
+
+.form {
+  background-color: white;
+  padding: 1rem 1.2rem 0;
+  border-radius: 0.8rem;
+  box-shadow: 1.5px 1.5px 4px 3px rgba(2, 2, 44, 0.417);
+}
+
+.form input {
+  
+  width: 100%;
+  height: 3rem;
+  padding-left: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.454);
+  font-weight: 600;
+}
+
+.form button {
+  width: 100%;
+  height: 3.3rem;
+  margin: 1rem 0;
+  background-color: hsla(140, 82%, 29%, 0.64);
+  border: none;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09rem;
+  box-shadow: 1.5px 1.5px 3px 2px rgb(2, 52, 2);
+}
+
+.form p {
+  font-size: 0.7rem;
+  padding: 0 1.8rem 1rem;
+}
+
+.form a {
+  text-decoration: none;
+  color: var(--Red);
+  font-weight: 600;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.red {
+  font-size: 0.7rem;
+  text-align: right;
+  color: var(--Red);
+}
+
+.inputvalue {
+  position: relative;
+}
+
+.inputvalue span {
+  position: absolute;
+  left: 90%;
+  top: 30%;
+}
+
+.danger {
+  color:hsl(0, 100%, 74%);
+}
+
+@media (min-width: 768px) {
+  body {
+    
+    background: url('./bg-intro-desktop.png'),var(--Red);
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 3rem 0.1rem;
+    max-height: 100vh;
+  }
+  .description {
+    height: 80vh;
+    padding: 35% 5% 0 15%;
+    text-align: left;
+  }
+  .description h1 {
+    padding: 1.5rem 1rem;
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  .description p {
+    padding: 1.5rem 0.8rem 0 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .info {
+    height: 80vh;
+    padding-top: 20%;
+    margin: 0 20% 0 10%;
+  }
+}
